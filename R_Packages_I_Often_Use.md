@@ -1,26 +1,6 @@
----
-title: "R packages I can't go without"
-author: "Lorenzo Bertola"
-date: "Document last run on `r format(Sys.time(), '%Y-%m-%d')`"
-output:
-  html_document:
-    toc: true
-    toc_depth: 4
-    theme: cerulean
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# R packages I often use
 
 Because i often break my R or RStudio installation on my local machine (e.g., switching compilers all of a sudden and then re-installing Rcpp), I decided to make this document to remind myself what packages I need to install on a fresh R installation. This is mostly focused on my genomic work, as that's what I am doing the most at the moment.
-
-As a bit of background:
-```{r output.lines=4}
-sessionInfo()
-```
-
-Please note that when I ran sessionInfo it already had some packages installed (devtools, Rcpp and the Rmarkdown requirements like knitr). So this sessionInfo() is mostly to let you know what machine I am using and what version. You may very well ignore the rest.
 
 ## 1. Utility packages - Rcpp, Devtools & BiocManager
 
