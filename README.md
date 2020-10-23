@@ -6,3 +6,4 @@ Hello there! And welcome to the nth tutorial/guide for pop gen in R. This was bo
 So far, I have added:
 
 - a [list](https://github.com/MboiTui/PopGen-in-R/blob/main/R_Packages_I_Often_Use.md) of packages I use and how to install them
+- a [guide]() on how to run fastStructure on the HPC
