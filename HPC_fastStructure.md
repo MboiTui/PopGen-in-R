@@ -3,7 +3,7 @@
 
 ### Prepare input
 
-I filtered it in R, and had genlight objects. To export use the below (from radiator package)
+I filtered it in R, and had genlight objects. To export use the below (from [radiator](https://thierrygosselin.github.io/radiator/) package)
 
 ```{r eval=FALSE}
 genomic_converter(gdsGL, output = "faststructure", filename = "02_FastStructure_Input")
@@ -15,7 +15,7 @@ I then copy it to the project folder. As an example, let's make a projectA folde
 mkdir ~/projectA
 ```
 
-We then need to get the python scripts.
+We then need to get the python scripts. For up to date instructions on this, check the [fastStructure official github](https://rajanil.github.io/fastStructure/)
 
 ```{bash eval=FALSE}
 cd ~/projectA
@@ -58,7 +58,7 @@ python structure.py -K N --input=genotypes --output=genotypes_output_KN_C
 
 #### Now, below an example of your sh. file to be submitted with qsub
 
-This is an example, with *#* lines being copied straight from the HPC page, adjust as needed (memory, nodes, etc)
+This is an example, with *#* lines being copied straight from the [HPC page](https://secure.jcu.edu.au/confluence/display/Public/HPRC+PBSPro+script+files), adjust as needed (memory, nodes, etc)
 
 *To-Do for lorenzo: loop that takes number of K values and iterations and produces individual lines. Used to exist, lost somewhere. . . .*
 
@@ -104,7 +104,7 @@ runs <- list.files(path = "~/folder/containing/results",
 fastSTR <- readQ(files = runs, filetype = "basic")
 ```
 
-Haven't fixed the below. in general gdsGL is a genlight object I use to get pop names. fastSTR is the list of ! files from the structrue run.
+Haven't fixed the below. in general gdsGL is a genlight object I use to get pop names. Individuals need to be in the same order as they are in the fastSTR file. That line of code will likely not be useful for most people, having different data structures and workflows. fastSTR is the list of Q files from the structrue run.
 
 ```{r eval=FALSE}
 fastSTR <- alignK(fastSTR)
