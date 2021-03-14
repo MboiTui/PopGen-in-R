@@ -4,5 +4,5 @@ Hello there! And welcome to the nth repository/blog/tutorial for pop gen in R. T
 So far, I have added:
 
 - a [list](https://github.com/MboiTui/PopGen-in-R/blob/main/R_Packages_I_Often_Use.md) of packages I use and how to install them
-- a [list]() of handy commands for data manipulation of genind/genlight files
+- a [list](https://github.com/MboiTui/PopGen-in-R/blob/main/Handy.md) of handy commands for data manipulation of genind/genlight files
 - a [guide](https://github.com/MboiTui/PopGen-in-R/blob/main/HPC_fastStructure.md) on how to run fastStructure on the HPC
