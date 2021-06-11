@@ -6,3 +6,4 @@ So far, I have added:
 - a [list](https://github.com/MboiTui/PopGen-in-R/blob/main/R_Packages_I_Often_Use.md) of packages I use and how to install them
 - a [list](https://github.com/MboiTui/PopGen-in-R/blob/main/HandyFunctions.md) of handy commands for data manipulation of genind/genlight files
 - a [guide](https://github.com/MboiTui/PopGen-in-R/blob/main/HPC_fastStructure.md) on how to run fastStructure on the HPC
+- a [guide]() on how to filter snp data from F1 crosses according to patterns of mendelian inheritance (coming soon...)
